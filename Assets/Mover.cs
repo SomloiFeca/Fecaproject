@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 class Mover : MonoBehaviour
@@ -15,7 +12,7 @@ class Mover : MonoBehaviour
         Vector3 direction = new(xDir, 0, yDir);
         direction.Normalize();
 
-        Debug.Log(direction);
+        // Debug.Log(direction);
 
         Vector3 velocity = direction * speed;
         transform.position += velocity * speed * Time.deltaTime;
